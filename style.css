@@ -1,0 +1,154 @@
+body{
+    text-align: center;
+    /* width: 40%; */
+    width: 100vw;
+    margin: auto;
+  }
+
+  h1 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 100px;  
+    margin-bottom: 0px;  
+    padding-bottom: 0px;
+    color: #535353;
+    /* outline: solid orange; */
+  }
+
+  p {
+    margin-top: 0px;  
+    padding-top: 0px;
+    font-family: 'Roboto', sans-serif;
+    color: grey;
+    /* outline: solid red; */
+  }
+
+  #topSection {
+    padding-bottom: 17%;
+  }
+
+  #titlePage {
+    /* padding-bottom: 10%; */
+    
+    padding-top: 10%;
+  }
+
+  #detailImage{
+    padding-top: 10%;
+    padding-bottom:10%;
+    width: 70%;
+  }
+  #stretch{
+    width: 100%;
+  }
+
+  .myButton {
+    width: 60%;
+    height: auto;
+    left: 50%;
+    top: 78%;
+    position: absolute;
+    /* outline: solid blue; */
+  }
+
+  .myButton img {
+      width: 30%;
+      height: 30%;
+      /* outline: solid red; */
+  }
+
+
+  html { 
+    background: url('images/background.png') no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+.masterContainer {
+    margin: auto;
+    width: 100%;
+}
+
+.container {
+    display: flex;
+	justify-content: space-around;
+	/* align-items: baseline; */
+    align-content: center;
+}
+
+.hoverZoomLink {
+    /* width: 200px; */
+    width: 80%; 
+    /* position: relative; */
+    z-index: -1;
+}
+
+.storeItems {
+    position: relative;
+    width:70%;
+    /* outline: solid orange; */
+}
+
+
+/* menu bar */
+
+#detailViewMenu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #333;
+}
+
+#menuHead{
+    font-size: 1.3em;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-family: 'Open Sans', sans-serif;
+    /* font-color: grey; */
+    /* background-color: #333; */
+}
+
+li {
+    float: right;
+}
+
+li a {
+    font-size: 1.3em;
+    display: block;
+    color: #535353;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+#blackSpace{
+    background-color: #333;
+}
+
+#breakText{
+    /* float: left; */
+    font-size: 1.3em;
+    display: block;
+    color:white;
+    text-align: left;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+    background-color: white;
+}

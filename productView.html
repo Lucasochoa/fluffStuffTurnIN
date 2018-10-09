@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en" class="lucas">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <title>Fluff Stuff</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Spirax" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <script src="jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="index.js"></script>
+    <!--The following line loads in your CSS style sheet-->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="productView.css">
+
+    <!--The following line loads in 2 fonts from Google Fonts: Bad Script and Lato-->
+    <!--<link href="./fluffSimple/index.css" rel="stylesheet"> -->
+
+    <!--The following line loads in your JS script-->
+    <!-- <script src="./fluffSimple/index.js"></script> -->
+</head>
+
+<body data-gr-c-s-loaded="true">
+    <ul id="detailViewMenu">
+        <li><a id='menuHead' href="news.asp">shop</a></li>
+        <li><a id='menuHead' href="contact.asp">contact</a></li>
+        <li><a id='menuHead' href="about.asp">cart</a></li>
+        <li><a id='menuHead' href="index.html">home</a></li>
+    </ul>
+
+    <div>
+        <img id='stretch' src="images/productViewYarn.png" alt="some blanket">
+        <div id='purchasePad'>
+            <div class="priceRow">
+                <p class="niceText">Twill Duvet Cover</p>
+            </div>
+            <div class="priceRow">
+                <p class="niceText">Price</p>
+                <p class="niceText">$249.00</p>
+            </div>
+            <div class="priceRow">
+                <p class="niceText">Tax</p>
+                <p class="niceText">$33.40</p>
+            </div>
+            <div class="priceRow">
+                <p class="niceText">Total</p>
+                <p class="niceText">$284</p>
+            </div>
+            <div class="priceRow">
+                <div class="number-input">
+                    <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()"></button>
+                    <input class="quantity" min="0" name="quantity" value="1" type="number">
+                    <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus"></button>
+                </div>
+                <div class="priceRow">
+                    <select>
+                        <option value="small">Small</option>
+                        <option value="medium">Medium</option>
+                        <option value="large">Large</option>
+                    </select>
+                </div>
+            </div>
+
+
+            <!-- <div class="number-input">
+                <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()"></button>
+                <input class="quantity" min="0" name="quantity" value="1" type="number">
+                <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus"></button>
+            </div> -->
+            <div class="priceRow">
+                <a href="index.html">
+                    <p class="niceTextButton">Buy Now</p>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- <div class="quantity">
+        <input type="number" min="1" max="9" step="1" value="1">
+    </div> -->
+
+
+    <img id='detailImage' src="images/detailInformatics.png" alt="detail informatics">
+
+</body>
+
+
+</html>

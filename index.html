@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en" class="lucas">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <title>Fluff Stuff</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Spirax" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <!--The following line loads in your CSS style sheet-->
+    <link rel="stylesheet" href="style.css">
+
+    <!--The following line loads in 2 fonts from Google Fonts: Bad Script and Lato-->
+    <!--<link href="./fluffSimple/index.css" rel="stylesheet"> -->
+
+    <!--The following line loads in your JS script-->
+    <!-- <script src="./fluffSimple/index.js"></script> -->
+</head>
+
+<body data-gr-c-s-loaded="true">
+    <ul>
+        <li><a href="index.html">shop</a></li>
+        <li><a href="index.html">contact</a></li>
+        <li><a href="index.html">cart</a></li>
+        <li><a href="index.html">home</a></li>
+    </ul>
+
+
+    <div id="topSection">
+        <h1 id="titlePage">Fluff Stuff</h1>
+        <p>fluffy stuff for your mid-century bohemian home </p>
+    </div>
+
+
+    <div class="masterContainer">
+        <div class="container">
+            <div class="storeItems">
+                <img src="images/photo1.png" alt="Random Name" class="hoverZoomLink">
+                <a href="detailView.html"><div class="myButton">
+                        <img src="./images/button.png" alt="Random Name">
+                    </div> </a>
+                <p>Himalian Wool Blanket</p>
+            </div>
+            <div class="storeItems">
+                <img src="images/photo2.png" alt="Random Name" class="hoverZoomLink">
+                <a href="https://www.w3schools.com/html/"><div class="myButton">
+                        <img src="./images/button.png" alt="Random Name">
+                    </div> </a>
+                <p>Gautama Blanket</p>
+            </div>
+            <div class="storeItems">
+                <img src="images/photo3.png" alt="Random Name" class="hoverZoomLink">
+                <a href="https://www.w3schools.com/html/"><div class="myButton">
+                        <img src="./images/button.png" alt="Random Name">
+                    </div> </a>
+                <p>Bahrainian Throw</p>
+            </div>
+        </div>
+        <div class="container">
+            <div class="storeItems">
+                <img src="images/photo4.png" alt="Random Name" class="hoverZoomLink">
+                <a href="https://www.w3schools.com/html/"><div class="myButton">
+                        <img src="./images/button.png" alt="Random Name">
+                    </div> </a>
+                <p>Latvian Shall</p>
+            </div>
+            <div class="storeItems">
+                <img src="images/photo5.png" alt="Random Name" class="hoverZoomLink">
+                <a href="https://www.w3schools.com/html/"><div class="myButton">
+                        <img src="./images/button.png" alt="Random Name">
+                    </div> </a>
+                <p>Cashmere Blanket</p>
+            </div>
+            <div class="storeItems">
+                <img src="images/photo6.png" alt="Random Name" class="hoverZoomLink">
+                <a href="https://www.w3schools.com/html/"><div class="myButton">
+                        <img src="./images/button.png" alt="Random Name">
+                    </div> </a>
+                <p>Egyptian Bed Dressings</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+
+<!-- marisa lu -->
+<script src="jquery-2.1.4.min.js"></script>
+<script>
+    $(document).scroll(function () {
+        var scrollPos = $(this).scrollTop();
+        $('#topSection').css({
+            'opacity': 1 - (scrollPos / 250),
+        });
+        if (scrollPos < 220) {
+            $('.masterContainer').css({
+                "webkit-filter": "blur(" + 40 / (0.1 * scrollPos ** 1.1 + 1) + "px)",
+                "moz-filter": "blur(" + 40 / (0.1 * scrollPos ** 1.1 + 1) + "px)",
+                "ms-filter": "blur(" + 40 / (0.1 * scrollPos ** 1.1 + 1) + "px)",
+                "o-filter": "blur(" + 40 / (0.1 * scrollPos ** 1.1 + 1) + "px)",
+                "filter": "blur(" + 40 / (0.1 * scrollPos ** 1.1 + 1) + "px)"
+            });
+        } else {
+            $('.masterContainer').css({
+                "webkit-filter": "blur(0px)",
+                "moz-filter": "blur(0px)",
+                "ms-filter": "blur(0px)",
+                "o-filter": "blur(0px)",
+                "filter": "blur(0px)"
+            });
+        }
+    });
+</script>
+<!-- marisa lu -->
+
+</html>
